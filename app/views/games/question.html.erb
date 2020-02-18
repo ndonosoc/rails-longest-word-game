@@ -1,0 +1,10 @@
+<div>
+  <h2>Create your word!</h2>
+  <h2><%= @code %></h2>
+<!--   <input type="" name=""> -->
+<form class="form-inline" action="/answer" method="get">
+  <input type="hidden" name="startingtime" value="<%= @starting_time %>">
+  <input type="text" name="answer" class="form-control mb-2 mr-sm-2" id="btn-mr-0" placeholder="Enter your word!">
+  <button type="submit" class="btn btn-primary mb-2">Send</button>
+</form>
+</div>
